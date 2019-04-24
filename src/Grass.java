@@ -35,12 +35,4 @@ public class Grass extends Plants {
 		return (this.IsGolfGrass);
 	}
 	
-	// Polymorphic/Method Overloading
-	public Double Area() {
-		Double Area;
-		Area = this.GetHeight() * this.GetWidth();
-		
-		return (Area);
-	}
-	
 }

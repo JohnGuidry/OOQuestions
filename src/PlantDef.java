@@ -12,6 +12,9 @@ public interface PlantDef {
 	// returns the Height of our plant.
 	Double GetHeight();
 	
+	// returns the Width of our plant.
+	Double GetWidth();
+	
 	// This is not allowed here since we are using an interface. Abstract Methods only.
 	/*Boolean GetIsGolfGrass() {
 		body;

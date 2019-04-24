@@ -42,13 +42,22 @@ public abstract class Plants implements PlantDef {
 		return (this.Width);
 	}
 	
+	// Polymorphic/Method Overloading
+	public Double Area() {
+		Double Area;
+		Area = this.GetHeight() * this.GetWidth();
+		
+		return (Area);
+	}
+	
+	// Polymorphic/Method Overloading
 	public Double Area(Double SoilDepth) {
 		Double Area;
 		Area = this.Height * this.Width * SoilDepth;
 		
 		return (Area);
 	}
-	
+		
 	// abstract Boolean IsGolfGrass();
 	// This was removed due Grass.java being used within main(). 
 

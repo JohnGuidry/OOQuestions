@@ -4,11 +4,13 @@ public abstract class Plants implements PlantDef {
 	private String Name;
 	private String Season;
 	private Double Height;
+	private Double Width;
 	
-	public Plants(String Name, String Season, Double Height) {
+	public Plants(String Name, String Season, Double Height, Double Width) {
 		this.Name =  Name;
 		this.Season = Season;
 		this.Height = Height;
+		this.Width = Width;
 	}
 	
 	public void SetName(String InputName) {
@@ -34,6 +36,17 @@ public abstract class Plants implements PlantDef {
 	
 	public Double GetHeight() {
 		return (this.Height);
+	}
+	
+	public Double GetWidth() {
+		return (this.Width);
+	}
+	
+	public Double Area(Double SoilDepth) {
+		Double Area;
+		Area = this.Height * this.Width * SoilDepth;
+		
+		return (Area);
 	}
 	
 	// abstract Boolean IsGolfGrass();
